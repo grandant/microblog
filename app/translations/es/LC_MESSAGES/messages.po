@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-04-23 12:56+0300\n"
+"POT-Creation-Date: 2021-04-23 18:14+0300\n"
 "PO-Revision-Date: 2017-09-29 23:25-0700\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: es\n"
@@ -68,7 +68,6 @@ msgid "Please use a different email address."
 msgstr "Por favor use una dirección de email diferente."
 
 #: app/auth/forms.py:37 app/auth/forms.py:43
-#, fuzzy
 msgid "Request Password Reset"
 msgstr "Pedir una nueva contraseña"
 
@@ -94,7 +93,7 @@ msgstr "Tu contraseña ha sido cambiada."
 
 #: app/main/forms.py:10 app/main/routes.py:60
 msgid "Search"
-msgstr ""
+msgstr "Buscar"
 
 #: app/main/forms.py:22
 msgid "About me"
@@ -152,9 +151,9 @@ msgid "Explore"
 msgstr "Explorar"
 
 #: app/templates/_post.html:14
-#, fuzzy, python-format
+#, python-format
 msgid "%(username)s said %(when)s:"
-msgstr "%(username)s dijo %(when)s"
+msgstr ""
 
 #: app/templates/_post.html:25
 msgid "Translate"
@@ -195,15 +194,15 @@ msgstr "Artículos previos"
 
 #: app/templates/search.html:4
 msgid "Search Results"
-msgstr ""
+msgstr "Resultados de Búsqueda"
 
 #: app/templates/search.html:13
 msgid "Previous results"
-msgstr ""
+msgstr "Resultados previos"
 
 #: app/templates/search.html:18
 msgid "Next results"
-msgstr ""
+msgstr "Resultados próximos"
 
 #: app/templates/user.html:8
 msgid "User"
@@ -257,47 +256,23 @@ msgstr "Nueva Contraseña"
 
 #: app/templates/errors/404.html:4
 msgid "Not Found"
-msgstr ""
+msgstr "Página No Encontrada"
 
 #: app/templates/errors/404.html:5 app/templates/errors/500.html:6
 msgid "Back"
-msgstr ""
+msgstr "Atrás"
 
 #: app/templates/errors/500.html:4
 msgid "An unexpected error has occurred"
-msgstr ""
+msgstr "Ha ocurrido un error inesperado"
 
 #: app/templates/errors/500.html:5
 msgid "The administrator has been notified. Sorry for the inconvenience!"
-msgstr ""
-
-#~ msgid "Request Password Reset"
-#~ msgstr "Pedir una nueva contraseña"
-
-#~ msgid "Search"
-#~ msgstr "Buscar"
+msgstr "El administrador ha sido notificado. ¡Lamentamos la inconveniencia!"
 
 #~ msgid "Error: the translation service is not configured."
 #~ msgstr "Error: el servicio de traducciones no está configurado."
 
-#~ msgid "Not Found"
-#~ msgstr "Página No Encontrada"
-
-#~ msgid "Back"
-#~ msgstr "Atrás"
-
-#~ msgid "An unexpected error has occurred"
-#~ msgstr "Ha ocurrido un error inesperado"
-
-#~ msgid "The administrator has been notified. Sorry for the inconvenience!"
-#~ msgstr "El administrador ha sido notificado. ¡Lamentamos la inconveniencia!"
-
-#~ msgid "Search Results"
-#~ msgstr "Resultados de Búsqueda"
-
-#~ msgid "Previous results"
-#~ msgstr "Resultados previos"
-
-#~ msgid "Next results"
-#~ msgstr "Resultados próximos"
+#~ msgid "%(username)s said %(when)s"
+#~ msgstr "%(username)s dijo %(when)s"
 
