@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-04-08 15:08+0300\n"
-"PO-Revision-Date: 2021-04-08 15:10+0300\n"
+"POT-Creation-Date: 2021-04-23 12:56+0300\n"
+"PO-Revision-Date: 2021-04-23 12:59+0300\n"
 "Last-Translator: \n"
 "Language: bg\n"
 "Language-Team: \n"
@@ -16,10 +16,10 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.5.1\n"
 "X-Generator: Poedit 2.4.2\n"
 
-#: app/__init__.py:18
+#: app/__init__.py:19
 msgid "Please log in to access this page."
 msgstr "Моля влезте, за да отворите тази страницата."
 
@@ -31,7 +31,7 @@ msgstr "Грешка: услугата за превод не работи."
 msgid "[Microblog] Reset Your Password"
 msgstr "[Микроблог]  Нова Парола"
 
-#: app/auth/forms.py:9 app/auth/forms.py:16 app/main/forms.py:9
+#: app/auth/forms.py:9 app/auth/forms.py:16 app/main/forms.py:21
 msgid "Username"
 msgstr "Потребител"
 
@@ -60,7 +60,7 @@ msgstr "Повторете Паролата"
 msgid "Register"
 msgstr "Регистрация"
 
-#: app/auth/forms.py:27 app/main/forms.py:22
+#: app/auth/forms.py:27 app/main/forms.py:34
 msgid "Please use a different username."
 msgstr "Моля използвайте друго потребителско име."
 
@@ -92,58 +92,62 @@ msgstr "Нова Парола"
 msgid "Your password has been reset."
 msgstr "Паролата ви беше сменена."
 
-#: app/main/forms.py:10
+#: app/main/forms.py:10 app/main/routes.py:60
+msgid "Search"
+msgstr "Търене"
+
+#: app/main/forms.py:22
 msgid "About me"
 msgstr "За мен"
 
-#: app/main/forms.py:12 app/main/forms.py:32
+#: app/main/forms.py:24 app/main/forms.py:44
 msgid "Submit"
 msgstr "Потвърждавам"
 
-#: app/main/forms.py:30
+#: app/main/forms.py:42
 msgid "Say something"
 msgstr "Кажете нещо"
 
-#: app/main/routes.py:34
+#: app/main/routes.py:35
 msgid "Your post is now live!"
 msgstr "Вашият пост беше публикуван!"
 
-#: app/main/routes.py:43 app/templates/base.html:21
+#: app/main/routes.py:44 app/templates/base.html:21
 msgid "Home"
 msgstr "Начало"
 
-#: app/main/routes.py:71
+#: app/main/routes.py:88
 msgid "Your changes have been saved."
 msgstr "Промените бяха запазени."
 
-#: app/main/routes.py:76 app/templates/edit_profile.html:5
+#: app/main/routes.py:93 app/templates/edit_profile.html:5
 msgid "Edit Profile"
 msgstr "Промяна на Профила"
 
-#: app/main/routes.py:86 app/main/routes.py:106
+#: app/main/routes.py:103 app/main/routes.py:123
 #, python-format
 msgid "User %(username)s not found."
 msgstr "Потребител %(username)s не е намерен."
 
-#: app/main/routes.py:89
+#: app/main/routes.py:106
 msgid "You cannot follow yourself!"
 msgstr "Не може да следвате себе си!"
 
-#: app/main/routes.py:93
+#: app/main/routes.py:110
 #, python-format
 msgid "You are following %(username)s!"
 msgstr "Вече следвате %(username)s!"
 
-#: app/main/routes.py:109
+#: app/main/routes.py:126
 msgid "You cannot unfollow yourself!"
 msgstr "Не може да не следвате себе си!"
 
-#: app/main/routes.py:113
+#: app/main/routes.py:130
 #, python-format
 msgid "You are not following %(username)s."
 msgstr "Вече не следвате %(username)s."
 
-#: app/main/routes.py:129 app/templates/base.html:22
+#: app/main/routes.py:146 app/templates/base.html:22
 msgid "Explore"
 msgstr "Преглед"
 
@@ -160,19 +164,19 @@ msgstr "Превод"
 msgid "Welcome to Microblog"
 msgstr "Добре дошли в Микроблог"
 
-#: app/templates/base.html:26
+#: app/templates/base.html:35
 msgid "Login"
 msgstr "Вход"
 
-#: app/templates/base.html:28
+#: app/templates/base.html:37
 msgid "Profile"
 msgstr "Профил"
 
-#: app/templates/base.html:29
+#: app/templates/base.html:38
 msgid "Logout"
 msgstr "Изход"
 
-#: app/templates/base.html:66
+#: app/templates/base.html:75
 msgid "Error: Could not contact server."
 msgstr "Грешка: Няма връзка със сървъра."
 
@@ -188,6 +192,18 @@ msgstr "По-нови"
 #: app/templates/index.html:22 app/templates/user.html:46
 msgid "Older posts"
 msgstr "По-стари"
+
+#: app/templates/search.html:4
+msgid "Search Results"
+msgstr "Резултати от Търсенето"
+
+#: app/templates/search.html:13
+msgid "Previous results"
+msgstr "Предишна страница"
+
+#: app/templates/search.html:18
+msgid "Next results"
+msgstr "Следваща страница"
 
 #: app/templates/user.html:8
 msgid "User"

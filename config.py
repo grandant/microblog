@@ -25,4 +25,5 @@ class Config(object):
 
     LANGUAGES = ['en', 'es', 'bg']
 
-    ELASTICSEARCH_URL = os.environ.get('ELASTICSEARCH_URL')
+    ELASTICSEARCH_URL = os.environ.get('ELASTICSEARCH_URL') or None
+    LOG_TO_STDOUT = os.environ.get('LOG_TO_STDOUT')
