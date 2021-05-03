@@ -1,4 +1,4 @@
-# Bulgarian translations for PROJECT.
+# Translations template for PROJECT.
 # Copyright (C) 2021 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
@@ -7,18 +7,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-04-23 18:14+0300\n"
-"PO-Revision-Date: 2021-04-23 12:59+0300\n"
-"Last-Translator: \n"
-"Language: bg\n"
+"POT-Creation-Date: 2021-05-03 18:10+0300\n"
+"PO-Revision-Date: 2021-05-03 18:17+0300\n"
 "Language-Team: \n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.5.1\n"
+"X-Generator: Poedit 2.4.2\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: bg_BG\n"
 
-#: app/__init__.py:19
+#: app/__init__.py:21
 msgid "Please log in to access this page."
 msgstr "Моля влезте, за да отворите тази страницата."
 
@@ -91,7 +92,7 @@ msgstr "Нова Парола"
 msgid "Your password has been reset."
 msgstr "Паролата ви беше сменена."
 
-#: app/main/forms.py:10 app/main/routes.py:60
+#: app/main/forms.py:10 app/main/routes.py:61
 msgid "Search"
 msgstr "Търене"
 
@@ -99,7 +100,7 @@ msgstr "Търене"
 msgid "About me"
 msgstr "За мен"
 
-#: app/main/forms.py:24 app/main/forms.py:44
+#: app/main/forms.py:24 app/main/forms.py:44 app/main/forms.py:50
 msgid "Submit"
 msgstr "Потвърждавам"
 
@@ -107,55 +108,75 @@ msgstr "Потвърждавам"
 msgid "Say something"
 msgstr "Кажете нещо"
 
-#: app/main/routes.py:35
+#: app/main/forms.py:48
+msgid "Message"
+msgstr "Съобщение"
+
+#: app/main/routes.py:36
 msgid "Your post is now live!"
 msgstr "Вашият пост беше публикуван!"
 
-#: app/main/routes.py:44 app/templates/base.html:21
+#: app/main/routes.py:45 app/templates/base.html:21
 msgid "Home"
 msgstr "Начало"
 
-#: app/main/routes.py:88
+#: app/main/routes.py:97
 msgid "Your changes have been saved."
 msgstr "Промените бяха запазени."
 
-#: app/main/routes.py:93 app/templates/edit_profile.html:5
+#: app/main/routes.py:102 app/templates/edit_profile.html:5
 msgid "Edit Profile"
 msgstr "Промяна на Профила"
 
-#: app/main/routes.py:103 app/main/routes.py:123
+#: app/main/routes.py:112 app/main/routes.py:132
 #, python-format
 msgid "User %(username)s not found."
 msgstr "Потребител %(username)s не е намерен."
 
-#: app/main/routes.py:106
+#: app/main/routes.py:115
 msgid "You cannot follow yourself!"
 msgstr "Не може да следвате себе си!"
 
-#: app/main/routes.py:110
+#: app/main/routes.py:119
 #, python-format
 msgid "You are following %(username)s!"
 msgstr "Вече следвате %(username)s!"
 
-#: app/main/routes.py:126
+#: app/main/routes.py:135
 msgid "You cannot unfollow yourself!"
 msgstr "Не може да не следвате себе си!"
 
-#: app/main/routes.py:130
+#: app/main/routes.py:139
 #, python-format
 msgid "You are not following %(username)s."
 msgstr "Вече не следвате %(username)s."
 
-#: app/main/routes.py:146 app/templates/base.html:22
+#: app/main/routes.py:155 app/templates/base.html:22
 msgid "Explore"
 msgstr "Преглед"
 
-#: app/templates/_post.html:14
+#: app/main/routes.py:178
+msgid "Your message has been sent."
+msgstr "Съобщението Ви беше изпратено."
+
+#: app/main/routes.py:180
+msgid "Send Message"
+msgstr "Изпращане на Съобщение"
+
+#: app/main/routes.py:219
+msgid "An export task is currently in progress"
+msgstr "Вече се изпълнява една задача за експортиране"
+
+#: app/main/routes.py:221
+msgid "Exporting posts..."
+msgstr "Експортиране на постове..."
+
+#: app/templates/_post.html:16
 #, python-format
 msgid "%(username)s said %(when)s:"
 msgstr "%(username)s каза %(when)s:"
 
-#: app/templates/_post.html:25
+#: app/templates/_post.html:27
 msgid "Translate"
 msgstr "Превод"
 
@@ -167,15 +188,19 @@ msgstr "Добре дошли в Микроблог"
 msgid "Login"
 msgstr "Вход"
 
-#: app/templates/base.html:37
+#: app/templates/base.html:39 app/templates/messages.html:4
+msgid "Messages"
+msgstr "Съобщения"
+
+#: app/templates/base.html:48
 msgid "Profile"
 msgstr "Профил"
 
-#: app/templates/base.html:38
+#: app/templates/base.html:49
 msgid "Logout"
 msgstr "Изход"
 
-#: app/templates/base.html:75
+#: app/templates/base.html:101
 msgid "Error: Could not contact server."
 msgstr "Грешка: Няма връзка със сървъра."
 
@@ -184,13 +209,21 @@ msgstr "Грешка: Няма връзка със сървъра."
 msgid "Hi, %(username)s!"
 msgstr "Здравейте, %(username)s!"
 
-#: app/templates/index.html:17 app/templates/user.html:41
+#: app/templates/index.html:17 app/templates/user.html:60
 msgid "Newer posts"
 msgstr "По-нови"
 
-#: app/templates/index.html:22 app/templates/user.html:46
+#: app/templates/index.html:22 app/templates/user.html:65
 msgid "Older posts"
 msgstr "По-стари"
+
+#: app/templates/messages.html:12
+msgid "Newer messages"
+msgstr "По-нови съобщения"
+
+#: app/templates/messages.html:17
+msgid "Older messages"
+msgstr "По-стари съобщения"
 
 #: app/templates/search.html:4
 msgid "Search Results"
@@ -204,43 +237,56 @@ msgstr "Предишна страница"
 msgid "Next results"
 msgstr "Следваща страница"
 
+#: app/templates/send_message.html:5
+#, python-format
+msgid "Send Message to %(recipient)s"
+msgstr "Изпратено Съобщение до %(recipient)s"
+
 #: app/templates/user.html:8
 msgid "User"
 msgstr "Потребител"
 
-#: app/templates/user.html:11
+#: app/templates/user.html:11 app/templates/user_popup.html:11
 msgid "Last seen on"
 msgstr "Последно активен на"
 
-#: app/templates/user.html:13
+#: app/templates/user.html:13 app/templates/user_popup.html:15
 #, python-format
 msgid "%(count)d followers"
 msgstr "%(count)d последователи"
 
-#: app/templates/user.html:13
+#: app/templates/user.html:13 app/templates/user_popup.html:16
 #, python-format
 msgid "%(count)d following"
 msgstr "Последовател на %(count)d"
 
-#: app/templates/user.html:15
+#: app/templates/user.html:17
 msgid "Edit your profile"
 msgstr "Промяна на Профила"
 
-#: app/templates/user.html:20
+#: app/templates/user.html:23
+msgid "Export your posts"
+msgstr "Експортирайте Вашите постове"
+
+#: app/templates/user.html:31 app/templates/user_popup.html:24
 msgid "Follow"
 msgstr "Следвам"
 
-#: app/templates/user.html:27
+#: app/templates/user.html:38 app/templates/user_popup.html:32
 msgid "Unfollow"
 msgstr "Не следвам"
 
+#: app/templates/user.html:46
+msgid "Send private message"
+msgstr "Изпращане на лично съобщение"
+
 #: app/templates/auth/login.html:12
 msgid "New User?"
-msgstr "Нов потребител?"
+msgstr "Нов Потребител?"
 
 #: app/templates/auth/login.html:12
 msgid "Click to Register!"
-msgstr "Натиснете тук за регистрация!"
+msgstr "Натиснете тук за Регистрация!"
 
 #: app/templates/auth/login.html:14
 msgid "Forgot Your Password?"
@@ -269,4 +315,3 @@ msgstr "Неочаквана грешка"
 #: app/templates/errors/500.html:5
 msgid "The administrator has been notified. Sorry for the inconvenience!"
 msgstr "Администраторът е уведомен. Съжаляваме за неудобството!"
-

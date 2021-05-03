@@ -18,6 +18,7 @@ develop-eggs
 lib
 lib64
 __pycache__
+.idea
 
 # Installer logs
 pip-log.txt
@@ -30,7 +31,7 @@ nosetests.xml
 # Translations
 *.mo
 
-# Mr Developer
+# Mr. Developer
 .mr.developer.cfg
 .project
 .pydevproject
